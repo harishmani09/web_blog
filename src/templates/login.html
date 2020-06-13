@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container page-form">
+        <form id="login-form" action="/auth/login" method="POST">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-success">Login</button>
+        </form>
+    </div>
+{% endblock %}
+
+<!-- <form id="login-form" action="/auth/login" method="POST">-->
+
+<!--        <input type = "email" id="email" placeholder="email as login id" name="email">-->
+<!--        <input type = "password" id="password" placeholder="password" name="password">-->
+<!--        <input type="submit" placeholder="login" id="submit-button">-->
+
+<!--    </form>-->
